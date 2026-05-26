@@ -6,9 +6,10 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-          dolores numquam iusto Ratione earum ducimus autem id iure pariatur
-          dolorum quae maiores.
+          I am an AI/ML & Generative AI Engineer dedicated to building logic-driven
+          AI solutions with real-world impact. From multi-agent orchestration
+          systems and RAG-powered chatbots to end-to-end ML pipelines, I focus on
+          turning complex problems into scalable, deployable AI solutions.
         </p>
       </div>
     </div>

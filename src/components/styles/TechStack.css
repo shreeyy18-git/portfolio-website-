@@ -1,0 +1,115 @@
+.techstack {
+    width: var(--cWidth);
+    max-width: var(--cMaxWidth);
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    background-color: var(--backgroundColor);
+}
+
+.techstack-title {
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 60px;
+    color: #eae5ec;
+}
+
+.techstack-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.techstack-category {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(194, 164, 255, 0.12);
+    border-radius: 16px;
+    padding: 24px 20px;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.techstack-category:hover {
+    border-color: rgba(194, 164, 255, 0.4);
+    background: rgba(194, 164, 255, 0.05);
+}
+
+.techstack-category-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--accentColor);
+    margin: 0 0 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.techstack-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.techstack-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #eae5ec;
+    background: rgba(194, 164, 255, 0.1);
+    border: 1px solid rgba(194, 164, 255, 0.2);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.techstack-badge:hover {
+    background: rgba(194, 164, 255, 0.2);
+    border-color: var(--accentColor);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(194, 164, 255, 0.15);
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .techstack {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .techstack-title {
+        font-size: 44px;
+        margin-bottom: 40px;
+    }
+
+    .techstack-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 640px) {
+    .techstack {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    .techstack-title {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .techstack-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .techstack-category {
+        padding: 20px 16px;
+    }
+}

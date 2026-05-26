@@ -1,70 +1,68 @@
-import { MdArrowOutward, MdCopyright } from "react-icons/md";
+import { MdEmail, MdArrowOutward } from "react-icons/md";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import "./styles/Contact.css";
 
 const Contact = () => {
   return (
     <div className="contact-section section-container" id="contact">
       <div className="contact-container">
-        <h3>Contact</h3>
-        <div className="contact-flex">
-          <div className="contact-box">
-            <h4>Email</h4>
-            <p>
-              <a href="mailto:example@mail.com" data-cursor="disable">
-                example@mail.com
-              </a>
-            </p>
-            <h4>Phone</h4>
-            <p>
-              <a href="tel:+9199999999" data-cursor="disable">
-                +91 99999 99999
-              </a>
-            </p>
-          </div>
-          <div className="contact-box">
-            <h4>Social</h4>
-            <a
-              href="https://github.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Github <MdArrowOutward />
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Linkedin <MdArrowOutward />
-            </a>
-            <a
-              href="https://x.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Twitter <MdArrowOutward />
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Instagram <MdArrowOutward />
-            </a>
-          </div>
-          <div className="contact-box">
-            <h2>
-              Designed and Developed <br /> by <span>Moncy Yohannan</span>
-            </h2>
-            <h5>
-              <MdCopyright /> 2024
-            </h5>
-          </div>
+        <h2 className="contact-title">Get In Touch</h2>
+        <p className="contact-subtitle">
+          Have a project, collaboration, or just want to connect? Feel free to
+          reach out.
+        </p>
+        <div className="contact-links">
+          <a
+            href="mailto:shreeyanshasati0@gmail.com"
+            className="contact-link"
+            data-cursor="disable"
+          >
+            <span className="contact-link-icon">
+              <MdEmail />
+            </span>
+            <span className="contact-link-text">
+              shreeyanshasati0@gmail.com
+            </span>
+            <span className="contact-link-arrow">
+              <MdArrowOutward />
+            </span>
+          </a>
+          <a
+            href="https://github.com/SHREEYANSHGIT"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+            data-cursor="disable"
+          >
+            <span className="contact-link-icon">
+              <FaGithub />
+            </span>
+            <span className="contact-link-text">github.com/SHREEYANSHGIT</span>
+            <span className="contact-link-arrow">
+              <MdArrowOutward />
+            </span>
+          </a>
+          <a
+            href="https://linkedin.com/in/shreeyansh-asati-18shreey"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+            data-cursor="disable"
+          >
+            <span className="contact-link-icon">
+              <FaLinkedinIn />
+            </span>
+            <span className="contact-link-text">
+              linkedin.com/in/shreeyansh-asati-18shreey
+            </span>
+            <span className="contact-link-arrow">
+              <MdArrowOutward />
+            </span>
+          </a>
         </div>
+        <p className="contact-footer">
+          Designed & Developed by <span>Shreeyansh Asati</span>
+        </p>
       </div>
     </div>
   );
