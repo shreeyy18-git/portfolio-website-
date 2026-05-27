@@ -1,12 +1,10 @@
+import { useEffect } from "react";
 import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
 import { FaGithub } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
-
-gsap.registerPlugin(useGSAP);
 
 interface Project {
   id: string;
@@ -89,7 +87,7 @@ const projects: Project[] = [
 ];
 
 const Work = () => {
-  useGSAP(() => {
+  useEffect(() => {
     let translateX: number = 0;
 
     function setTranslateX() {
